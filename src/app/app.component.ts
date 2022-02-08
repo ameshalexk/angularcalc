@@ -7,4 +7,19 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'exercise';
+
+  public totalVar: number = 0;
+
+  add(a: any) {
+    this.totalVar = this.totalVar + parseInt(a.value, 10);
+  }
+  sub(a: any) {
+    this.totalVar = this.totalVar - parseInt(a.value, 10);
+  }
+  mul(a: any) {
+    this.totalVar = this.totalVar * parseInt(a.value, 10);
+  }
+  div(a: any) {
+    this.totalVar = this.totalVar / parseInt(a.value, 10);
+  }
 }
